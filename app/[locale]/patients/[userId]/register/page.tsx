@@ -1,9 +1,9 @@
 import Image from "next/image";
 import { redirect } from "next/navigation";
+import initTranslations from "@/app/i18n";
 
 import RegisterForm from "@/components/forms/RegisterForm";
 import { getPatient, getUser } from "@/lib/actions/patient.actions";
-import initTranslations from "@/app/i18n";
 import TranslationsProvider from "@/providers/TranslationsProvider";
 
 const i18nNamespaces = ["register", "commonpage"]

@@ -1,12 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
 
+import { LogoutButton } from "@/components/LogoutButton";
 import { StatCard } from "@/components/StatCard";
 import { columns } from "@/components/table/columns";
 import { DataTable } from "@/components/table/DataTable";
 import { getRecentAppointmentList } from "@/lib/actions/appointment.actions";
-import { LogOut } from "lucide-react";
-import { LogoutButton } from "@/components/LogoutButton";
 
 const AdminPage = async () => {
   const appointments = await getRecentAppointmentList();

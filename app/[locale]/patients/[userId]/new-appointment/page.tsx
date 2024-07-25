@@ -1,8 +1,8 @@
 import Image from "next/image";
 
+import initTranslations from "@/app/i18n";
 import { AppointmentForm } from "@/components/forms/AppointmentForm";
 import { getPatient } from "@/lib/actions/patient.actions";
-import initTranslations from "@/app/i18n";
 import TranslationsProvider from "@/providers/TranslationsProvider";
 
 const i18nNamespaces = ["appointment", "commonpage"]
