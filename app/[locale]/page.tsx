@@ -2,10 +2,10 @@ import Image from "next/image";
 import Link from "next/link";
 
 import { PatientForm } from "@/components/forms/PatientForm";
-import { PasskeyModal } from "@/components/PasskeyModal";
-import initTranslations from "../i18n";
-import TranslationsProvider from "@/providers/TranslationsProvider";
 import LanguageChanger from "@/components/LangaugeChanger";
+import { PasskeyModal } from "@/components/PasskeyModal";
+import TranslationsProvider from "@/providers/TranslationsProvider";
+import initTranslations from "../i18n";
 
 const i18nNamespaces = ['homepage', "commonpage"];
 

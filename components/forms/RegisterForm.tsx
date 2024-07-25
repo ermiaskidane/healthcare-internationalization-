@@ -5,6 +5,7 @@ import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 import { useForm } from "react-hook-form";
+import { useTranslation } from "react-i18next";
 import { z } from "zod";
 
 import { Form, FormControl } from "@/components/ui/form";
@@ -25,7 +26,6 @@ import "react-phone-number-input/style.css";
 import CustomFormField, { FormFieldType } from "../CustomFormField";
 import { FileUploader } from "../FileUploader";
 import SubmitButton from "../SubmitButton";
-import { useTranslation } from "react-i18next";
 
 const RegisterForm = ({ user }: { user: User }) => {
   const router = useRouter();
