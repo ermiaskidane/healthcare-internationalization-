@@ -22,8 +22,8 @@ export default async function initTranslations(
   i18nInstance = i18nInstance || createInstance();
   // console.log("erwerw", locale)
 
-  console.log('i18n initialized with locale:', locale);
-  console.log('Namespaces:', namespaces);
+  // console.log('i18n initialized with locale:', locale);
+  // console.log('Namespaces:', namespaces);
   // console.log('Translations:', language);
 
   i18nInstance.use(initReactI18next);
