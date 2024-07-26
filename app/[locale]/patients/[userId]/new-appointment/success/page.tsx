@@ -22,6 +22,9 @@ const RequestSuccess = async ({
 
   const { t } = await initTranslations(locale, i18nNamespaces);
 
+  // TO-DO: Sentry metric if needed
+  // Sentry.metrics.set("user_view_appointment_success", user.name)
+
   return (
     <div className=" flex h-screen max-h-screen px-[5%]">
       <div className="success-img">

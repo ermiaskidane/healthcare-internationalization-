@@ -10,6 +10,8 @@ const i18nNamespaces = ["appointment", "commonpage"]
 const Appointment = async ({ params: { userId, locale } }: SearchParamProps) => {
   const patient = await getPatient(userId);
 
+  // TO-DO: Sentry metric if needed
+  // Sentry.metrics.set("user_view_newAppointment", patient.name)
   const { t, resources } = await initTranslations(locale, i18nNamespaces);
 
   return (
